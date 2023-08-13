@@ -45,7 +45,7 @@ jobs:
       - name: Run BBDC script
         if: contains(env.TYPE, 'bbdc')
         run: |
-          python -m github_poster bbdc --bbdc_user_id ${{secrets.BBDC_USERID}} --bbdc_type time
+          python -m github_poster bbdc --bbdc_user_id ${{secrets.BBDC_USERID}} --bbdc_type time --me ${{ env.ME }}
 
       - name: Mv svg files to examples
         # only for me to show
