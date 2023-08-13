@@ -49,7 +49,7 @@ jobs:
 
       - name: Mv svg files to examples
         # only for me to show
-        if: github.repository_owner == 'yihong0618'
+        if: github.repository_owner == 'kmq116'
         run: mv OUT_FOLDER/*.svg examples/
 
       - name: Push new postger
